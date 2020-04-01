@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: andreinavaspythonexampleproject 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: andreinavaspythonexampleproject 
+    spec:
+      containers:
+        - name: andreinavaspythonexampleproject 
+          image: acrmct.azurecr.io/andreinavaspythonexampleproject
+          ports:
+          - containerPort: 80
